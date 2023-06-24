@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar flex">
+        <img class="logo" src="images/logo.svg" alt="snap-logo">
+
+
+        <ul class="nav-items flex">
+          <li class="dd-menu" id="dropBtn">
+            <a href="#">Features</a>
+            <i class="fas fa-angle-down" id="icon"></i>
+            <div class="dropdown features-dd" id="dropNav">
+              <ul>
+                <li class="features-list">
+                  <p>Todo List</p>
+                </li>
+                <li class="features-list">
+                  <p>Calenders</p>
+                </li>
+                <li class="features-list">
+                  <p>Reminders</p>
+                </li>
+                <li class="features-list">
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dd-menu"  id="dropBtn1">
+            <a href="#">Company</a>
+            <i class="fas fa-angle-down"></i>
+            <div class="dropdown categories-dd" id="dropNav1">
+              <ul>
+                <li>
+                  <p>History</p>
+                </li>
+                <li>
+                  <p>Our Team</p>
+                </li>
+                <li>
+                  <p>Blog</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+
+        <div class="buttons">
+          <button class="login btn">Login</button>
+          <button class="register btn">Register</button>
+        </div>
+
+      </nav>
+
+
+
+      <div class="mobile-navbar">
+
+        <img class="logo" src="images/logo.svg" alt="snap-logo">
+
+        <button id="open"><i class="fas fa-bars"></i></button>
+
+
+        <div class="mobile-nav" id="nav-toggle">
+          <ul class="nav-items flex">
+            <button id="close"><i class="fa-solid fa-close"></i></button>
+            <li class="dd-menu" id="mobDropBtn">
+              <a href="#">Features</a>
+              <i class="fas fa-angle-down"></i>
+              <div class="dropdown features-dd mob-dd" id="mobDropNav">
+                <ul>
+                  <li class="features-list">
+                    <p>Todo List</p>
+                  </li>
+                  <li class="features-list">
+                    <p>Calenders</p>
+                  </li>
+                  <li class="features-list">
+                    <p>Reminders</p>
+                  </li>
+                  <li class="features-list">
+                    <p>Planning</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dd-menu"  id="mobDropBtn1">
+              <a href="#">Company</a>
+              <i class="fas fa-angle-down"></i>
+              <div class="dropdown categories-dd mob-dd" id="mobDropNav1">
+                <ul>
+                  <li>
+                    <p>History</p>
+                  </li>
+                  <li>
+                    <p>Our Team</p>
+                  </li>
+                  <li>
+                    <p>Blog</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+
+          <div class="buttons flex">
+            <button class="login btn">Login</button>
+            <button class="register btn">Register</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container flex main-con">
+      <div class="left flex">
+        <h1> Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn learn">Learn more</button>
+        <div class="brands flex">
+          <div>
+            <img src="images/client-databiz.svg" alt="">
+          </div>
+          <div>
+            <img src="images/client-audiophile.svg" alt="">
+          </div>
+          <div>
+            <img src="images/client-meet.svg" alt="">
+          </div>
+          <div>
+            <img src="images/client-maker.svg" alt="">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="right">
+        <img class="desktop-img" src="images/image-hero-desktop.png" alt="">
+        <img class="mob-img" src="images/image-hero-mobile.png" alt="">
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src="https://kit.fontawesome.com/1248cb0d21.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
